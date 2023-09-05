@@ -1,4 +1,7 @@
-answer = "nutrition"
+answer = "test"
+for i in answer:
+    print("_", end=" ")
+print("\n")
 guess = input("Choose a letter: ")
 
 if guess.isalpha():
@@ -8,6 +11,8 @@ if guess.isalpha():
         print("incorrect")
 else: 
     print("Invalid input, Try Again :")
+
+
 
 
 
