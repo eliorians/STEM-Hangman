@@ -5,4 +5,4 @@ steps to push to git:
 git status
 git add .
 git commit -m "what you did"
-git pushWith
+git push
