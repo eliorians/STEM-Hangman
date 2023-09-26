@@ -1,4 +1,4 @@
-
+from DrT import *
 #sets answer to hangman game
 word_choices= ["code", "giraffe", "tashakkori"]
 difficulty = int(input ("choose a difficulty: 0 for easy, 1 medium, 2 for hard: "))
@@ -44,7 +44,10 @@ def main():
         #check if the player has guessed all the letters
         if all(item in letter_list for item in answer):
             print("YOU WIN!!!")
+            if (difficulty == 2):
+                print (drT)
             break #end the game if the player wins
+            
     
 
             
