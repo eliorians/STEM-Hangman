@@ -23,9 +23,15 @@ def main():
             print("Invalid input, Try Again :")
        #list of guessed letters
         letter_list.append(guess)
-        print(letter_list)
+        for i in answer:
+            if i in letter_list:
+                print (i, end=" ")
+            else:
+                print("_", end=" ")
+
+        print ("\n")
         #check if the player has guessed all the letters
-        if set(answer) == set(letter_list):
+        if all(item in letter_list for item in answer):
             print("YOU WIN!!!")
             break #end the game if the player wins
     print("GAME OVER!",
